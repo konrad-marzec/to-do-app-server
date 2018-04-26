@@ -1,0 +1,27 @@
+{
+  "name": "to-do-app-server",
+  "version": "1.0.0",
+  "description": "to do app graphql server",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "start": "NODE_ENV=production node ./build/server.js",
+    "start:babel": "babel-node ./src/server.js",
+    "debug:babel": "babel-node --inspect ./src/server.js"
+  },
+  "author": "Konrad Marzec",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^1.3.5",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "graphql": "^0.13.2",
+    "graphql-tools": "^2.24.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
